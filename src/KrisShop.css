@@ -1,0 +1,55 @@
+.krisshop-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.krisshop-invite {
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    font-style: normal;
+}
+
+.krisshop-panel {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 5%;
+}
+
+.krisshop-panel img {
+    max-width: 100%;
+    flex: 1;
+}
+
+.krisshop-panel p {
+    position: absolute;
+    text-align: center;
+    color: white;
+    font-size: 36px;
+    line-height: 42px;
+    font-weight: bold;
+}
+
+.traveller-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+}
+
+.traveller-icons img {
+    height: 60%;
+}
+
+.shop-to-gate-map {
+    max-width: 125%;
+}
