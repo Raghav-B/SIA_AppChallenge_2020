@@ -1,0 +1,109 @@
+.splash-background {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #2834A5;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ellipse2 {
+    position: absolute;
+    width: 230px;
+    height: 230px;
+    left: -133px;
+    top: 586px;
+    background: linear-gradient(55.37deg, #FF9B21 33.89%, rgba(244, 194, 13, 0.21) 85.67%);
+    border-radius: 50%;
+}
+
+
+.ellipse3 {
+    position: absolute;
+    width: 259px;
+    height: 259px;
+    left: -129px;
+    top: -129px;
+    background: linear-gradient(180deg, #FF9B21 0%, rgba(244, 194, 13, 0.21) 100%);
+    border-radius: 50%;
+}
+
+.ellipse4 {
+    position: absolute;
+    width: 225px;
+    height: 225px;
+    left: 315px;
+    top: 320px;
+    background: linear-gradient(180deg, #FF9B21 0%, rgba(244, 194, 13, 0.21) 100%);
+    border-radius: 50%;
+}
+
+
+.ellipse5 {
+    position: absolute;
+    width: 390px;
+    height: 390px;
+    left: 199px;
+    top: 658px;
+    background: linear-gradient(180deg, #FF9B21 0%, rgba(255, 155, 33, 0) 100%);
+    border-radius: 50%;
+}
+
+.ellipse6 {
+    position: absolute;
+    width: 142px;
+    height: 142px;
+    left: 182px;
+    top: 608px;
+    background: linear-gradient(55.37deg, #FF9B21 33.89%, rgba(244, 194, 13, 0.21) 85.67%);
+    border-radius: 50%;
+}
+
+
+.ellipse7 {
+    position: absolute;
+    width: 186px;
+    height: 186px;
+    left: 0px;
+    top: 392px;
+    background: linear-gradient(55.37deg, #FF9B21 33.89%, rgba(244, 194, 13, 0.21) 85.67%);
+    border-radius: 50%;
+}
+
+.ellipse8 {
+    position: absolute;
+    width: 259px;
+    height: 259px;
+    left: 207px;
+    top: -80px;
+    background: linear-gradient(180deg, #FF9B21 0%, rgba(244, 194, 13, 0.21) 100%);
+    border-radius: 50%;
+}
+
+.sia-logo {
+    margin-top: 100px;
+    width: 70%;
+    height: auto;
+}
+
+.checkin-button {
+    margin-top: 150px;
+    background: #FEA000;
+    display: inline-block;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    padding-left: 8%;
+    padding-right: 8%;
+    border-radius: 50px;
+    z-index: 2;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+}
+
+.checkin-text {
+    font-size: 36px;
+    line-height: 42px;
+    color: white;
+}
