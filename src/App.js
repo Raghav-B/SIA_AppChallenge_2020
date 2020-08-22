@@ -4,7 +4,7 @@ import { BrowserRouter, Route, Switch, withRouter, Link } from "react-router-dom
 
 import Splash from "./Splash.js";
 import SignIn from "./SignIn.js";
-import Home from "./Home.js";
+import Main from "./Main.js";
 
 class App extends React.Component {
   
@@ -51,7 +51,13 @@ class App extends React.Component {
               <Switch>
                 <Route path="/" exact component={() => (<Splash/>)}/>
                 <Route path="/signin" exact component={() => (<SignIn/>)}/>
-                <Route path="/main/home" exact component={() => (<Home/>)}/>
+
+                <Route path="/main/preflight" exact component={() => (<Main/>)}/>
+                <Route path="/main/sia" exact component={() => (<Main/>)}/>
+                <Route path="/main/checkin" exact component={() => (<Main/>)}/>
+                <Route path="/main/home" exact component={() => (<Main/>)}/>
+                <Route path="/main/home-business-class" exact component={() => (<Main/>)}/>
+
               </Switch>
             
             </div>

@@ -1,0 +1,63 @@
+.chatting-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.elapsed-bar {
+    position: relative;
+    top: -24px;
+    height: 24px;
+    width: 40px;
+    background-color: #2834A5;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.sia-intro-message {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    height: 90px;
+    width: 100%;
+}
+
+.sia-face-sia {
+    height: 90%;
+    margin: 1%;
+}
+
+.message-box-sia {
+    height: 80%;
+    width: 70%;
+    margin: 1%;
+}
+
+.message-box-text-sia {
+    position: absolute;
+    width: 60%;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.user-icon {
+    background: #2834A5;
+    border-radius: 50%;
+    height: 65px;
+    width: 65px;
+    padding: 3%;
+    margin: 1%;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.user-icon span {
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 70px;
+    text-align: center;
+    color: #FFFFFF;
+}

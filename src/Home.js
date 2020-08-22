@@ -1,40 +1,107 @@
 import React, { useContext } from 'react';
-import { withRouter, Link, BrowserRouter, Switch, Route } from 'react-router-dom'
+import { withRouter, Link } from 'react-router-dom';
 
 import "./Home.css";
 
-import ProgressBar from "./ProgressBar.js";
-import KrisShop from "./KrisShop.js";
+function Home() {
+    return (
+        <div className="krisshop-container">
+            <div className="progress-bar-container">
+                <span className="welcome-text">Welcome Mr Ojus Sharma,</span>
+                <br/>
+                <span className="flight-text">Your flight <b>SQ213</b> departs in 3 hrs 15 mins</span>
+                <br/>
 
-class Home extends React.Component {
+                <div className="actual-bar">
+                    <div className="full-bar"></div>
+                    <div className="elapsed-bar-home"></div>
+                    
+                    <div className="indicator-line" style={
+                            {"left": "50px",
+                            "top": "135px"}}>
+                    </div>
+                    <div className="indicator-text" style={
+                        {"left": "10px",
+                        "top": "165px"}}>
+                        Check-In opens<br/>
+                        1200
+                    </div>
 
-    componentDidMount() {
-        
-        var myDiv = document.getElementById("screen");
-        myDiv.style.overflowY = "scroll";
-      }
+                    <div className="indicator-line" style={
+                            {"left": "250px",
+                            "top": "135px"}}>
+                    </div>
+                    <div className="indicator-text" style={
+                        {"left": "220px",
+                        "top": "165px"}}>
+                        Gate opens<br/>
+                        1500
+                    </div>
+                    
+                    <div className="indicator-line" style={
+                            {"left": "300px",
+                            "top": "115px"}}>
+                    </div>
+                    <div className="indicator-text" style={
+                        {"left": "273px",
+                        "top": "86px"}}>
+                        Departs at<br/>
+                        1700
+                    </div>
 
-    render() {
-        return (
-            <div className="home-background">
-                <img src={require("./imgs/sia_full_logo.png")} className="sia-full-logo"/>
-                <div className="home-ellipse"/>
-    
-                <div className="home-content">
-                    <ProgressBar flightNumber={"SQ213"} timeLeft={"3 hrs 15 mins"}></ProgressBar>
-    
-                    <Switch>
-                        <Route path="/main/home" exact component={() => (<KrisShop/>)}/>
-                        <Route path="/home/lounge" exact component={() => (<div></div>)}/>
-                        <Route path="/home/checklist" exact component={() => (<div></div>)}/>
-                        <Route path="/home/chatbot" exact component={() => (<div></div>)}/>
-                        <Route path="/home/chatbot" exact component={() => (<div></div>)}/>
-                    </Switch>
+                    <div className="time-left-text" style={
+                        {"left": "205px",
+                        "top": "129px"}}>
+                        1h 15m
+                    </div>
+
+                    <div className="time-left-text" style={
+                        {"left": "270px",
+                        "top": "129px"}}>
+                        2h
+                    </div>
                 </div>
-                
+
+                <hr/>
             </div>
-        );
-    }
+            
+            <p className="krisshop-invite">
+                Since you still have some time, why not do some shopping?
+            </p>
+
+            <div className="krisshop-panel"  style={{"padding-left": "5%", "padding-right": "5%"}}>
+                <img src={require("./imgs/krisshop.png")}/>
+            </div>
+
+            <div className="krisshop-panel">
+                <p>
+                    Get 10% off all makeup needs!
+                </p>
+                <img src={require("./imgs/makeupbrush.jpg")}/>
+            </div>
+
+            <div className="traveller-icons">
+                <img src={require("./imgs/traveller_black.png")}/>
+                <img src={require("./imgs/traveller_black.png")}/>
+                <img src={require("./imgs/traveller_white.png")}/>
+                <img src={require("./imgs/traveller_white.png")}/>
+            </div>
+
+            <p className="krisshop-invite">
+                There are currently <span style={{"color": "#FF9B21", "font-weight": "bold"}}>5</span> people at your gate
+                Expected waiting time: <span style={{"color": "#FF9B21", "font-weight": "bold"}}>10 mins</span>
+            </p>
+
+            <p className="krisshop-invite">
+                Your gate will open soon and you are the first batch to be seated, please proceed to  
+                <span style={{"color": "#FF9B21", "font-weight": "bold"}}> Gate D30</span> to avoid delays.
+            </p>
+
+            <img src={require("./imgs/shop_to_gate_map.png")} className="shop-to-gate-map"></img>
+
+            <br/><br/>
+        </div>
+    );
 }
 
 export default withRouter(Home);
