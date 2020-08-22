@@ -57,6 +57,8 @@ class App extends React.Component {
                 <Route path="/main/checkin" exact component={() => (<Main/>)}/>
                 <Route path="/main/home" exact component={() => (<Main/>)}/>
                 <Route path="/main/home-business-class" exact component={() => (<Main/>)}/>
+                <Route path="/main/krisshop" exact component={() => (<Main/>)}/>
+                <Route path="/main/krisworld-entertainment" exact component={() => (<Main/>)}/>
 
               </Switch>
             

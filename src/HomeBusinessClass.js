@@ -15,7 +15,7 @@ class HomeBusinessClass extends React.Component {
 
                     <div className="actual-bar">
                         <div className="full-bar"></div>
-                        <div className="elapsed-bar-hbc"></div>
+                        <div className="elapsed-bar-krisshop"></div>
                         
                         <div className="indicator-line" style={
                                 {"left": "50px",

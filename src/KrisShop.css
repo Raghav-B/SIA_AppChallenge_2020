@@ -1,0 +1,17 @@
+.krisshop-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.elapsed-bar-krisshop {
+    position: relative;
+    top: -24px;
+    height: 24px;
+    width: 90px;
+    background-color: #2834A5;
+    border-radius: 10px;
+    z-index: 1;
+}

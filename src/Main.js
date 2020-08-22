@@ -9,6 +9,8 @@ import Chatting from "./Chatting.js";
 import CheckIn from "./CheckIn.js";
 import Home from "./Home.js";
 import HomeBusinessClass from "./HomeBusinessClass.js";
+import KrisShop from "./KrisShop.js";
+import KrisworldEntertainment from "./KrisworldEntertainment.js";
 
 class Main extends React.Component {
 
@@ -30,8 +32,8 @@ class Main extends React.Component {
                         <Route path="/main/checkin" exact component={() => (<CheckIn/>)}/>
                         <Route path="/main/home" exact component={() => (<Home/>)}/>
                         <Route path="/main/home-business-class" exact component={() => (<HomeBusinessClass/>)}/>
-
-                        
+                        <Route path="/main/krisshop" exact component={() => (<KrisShop/>)}/>
+                        <Route path="/main/krisworld-entertainment" exact component={() => (<KrisworldEntertainment/>)}/>
                         
                         
                     </Switch>
