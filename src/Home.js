@@ -6,29 +6,35 @@ import "./Home.css";
 import ProgressBar from "./ProgressBar.js";
 import KrisShop from "./KrisShop.js";
 
-function Home() {
-    return (
-        <div className="home-background">
-            <img src={require("./imgs/sia_full_logo.png")} className="sia-full-logo"/>
-            <div className="home-ellipse"/>
+class Home extends React.Component {
 
-            <div className="home-content">
-                <ProgressBar flightNumber={"SQ213"} timeLeft={"3 hrs 15 mins"}></ProgressBar>
+    componentDidMount() {
+        
+        var myDiv = document.getElementById("screen");
+        myDiv.style.overflowY = "scroll";
+      }
 
-                <Switch>
-                    <Route path="/home" exact component={() => (<KrisShop/>)}/>
-                    <Route path="/home/lounge" exact component={() => (<div></div>)}/>
-                    <Route path="/home/checklist" exact component={() => (<div></div>)}/>
-                    <Route path="/home/chatbot" exact component={() => (<div></div>)}/>
-                    <Route path="/home/chatbot" exact component={() => (<div></div>)}/>
-                </Switch>
+    render() {
+        return (
+            <div className="home-background">
+                <img src={require("./imgs/sia_full_logo.png")} className="sia-full-logo"/>
+                <div className="home-ellipse"/>
+    
+                <div className="home-content">
+                    <ProgressBar flightNumber={"SQ213"} timeLeft={"3 hrs 15 mins"}></ProgressBar>
+    
+                    <Switch>
+                        <Route path="/main/home" exact component={() => (<KrisShop/>)}/>
+                        <Route path="/home/lounge" exact component={() => (<div></div>)}/>
+                        <Route path="/home/checklist" exact component={() => (<div></div>)}/>
+                        <Route path="/home/chatbot" exact component={() => (<div></div>)}/>
+                        <Route path="/home/chatbot" exact component={() => (<div></div>)}/>
+                    </Switch>
+                </div>
+                
             </div>
-            
-            
-
-
-        </div>
-    );
+        );
+    }
 }
 
 export default withRouter(Home);
