@@ -33,7 +33,7 @@ class SignIn extends React.Component {
                         <input id="ticketnum"></input>
                         <br/><br/>
 
-                        <Link to="/main/home" style={
+                        <Link to="/main/preflight" style={
                                 {"text-decoration": "none",
                                 "font-size": "18px"}}>
                             <div className="login-button">

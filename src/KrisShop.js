@@ -65,12 +65,12 @@ class KrisShop extends React.Component {
                     <hr/>
                 </div>
 
-                <span className="info-text" style={
+                <span className="info-text init-left" style={
                     {"width": "90%"}
                 }>Here are some specially curated deals just for <span style={{"color": "#FF9B21", "font-weight": "bold"}}>you</span>:</span>
                 <br/>
 
-                <img src={require("./imgs/krisshop_mockup.png")} style={{"width": "140%"}}/>
+                <img src={require("./imgs/krisshop_mockup.png")} className="init-right" style={{"width": "140%"}}/>
                 <br/><br/>
             </div>
         );

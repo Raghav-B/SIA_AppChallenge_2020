@@ -50,13 +50,13 @@ function Home() {
                         1700
                     </div>
 
-                    <div className="time-left-text" style={
+                    <div className="time-left-text init-invisible" style={
                         {"left": "205px",
                         "top": "129px"}}>
                         1h 15m
                     </div>
 
-                    <div className="time-left-text" style={
+                    <div className="time-left-text init-invisible" style={
                         {"left": "270px",
                         "top": "129px"}}>
                         2h

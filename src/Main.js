@@ -12,6 +12,7 @@ import Home from "./Home.js";
 import HomeBusinessClass from "./HomeBusinessClass.js";
 import KrisShop from "./KrisShop.js";
 import KrisworldEntertainment from "./KrisworldEntertainment.js";
+import InFlightScreen from "./InFlightScreen.js";
 
 class Main extends React.Component {
 
@@ -35,7 +36,7 @@ class Main extends React.Component {
                         <Route path="/main/home-business-class" exact component={() => (<HomeBusinessClass/>)}/>
                         <Route path="/main/krisshop" exact component={() => (<KrisShop/>)}/>
                         <Route path="/main/krisworld-entertainment" exact component={() => (<KrisworldEntertainment/>)}/>
-                        
+                        <Route path="/main/inflight" exact component={() => (<InFlightScreen/>)}/>
                         
                     </Switch>
                 </div>

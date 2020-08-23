@@ -52,19 +52,19 @@ class Chatting extends React.Component {
                             1700
                         </div>
                         
-                        <div className="time-left-text" style={
+                        <div className="time-left-text init-invisible" style={
                             {"left": "25px",
                             "top": "129px"}}>
                             <span style={{"color": "white"}}>15</span>m
                         </div>
 
-                        <div className="time-left-text" style={
+                        <div className="time-left-text init-invisible" style={
                             {"left": "150px",
                             "top": "129px"}}>
                             3h
                         </div>
 
-                        <div className="time-left-text" style={
+                        <div className="time-left-text init-invisible" style={
                             {"left": "270px",
                             "top": "129px"}}>
                             2h

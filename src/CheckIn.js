@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import { withRouter, Link, BrowserRouter, Switch, Route } from 'react-router-dom';
 
 import "./CheckIn.css";
+import "./Animations.css";
 
 class CheckIn extends React.Component {
     render() {
@@ -50,13 +51,13 @@ class CheckIn extends React.Component {
                             1700
                         </div>
                         
-                        <div className="time-left-text" style={
+                        <div className="time-left-text init-invisible" style={
                             {"left": "140px",
                             "top": "129px"}}>
                             2h 50m
                         </div>
 
-                        <div className="time-left-text" style={
+                        <div className="time-left-text init-invisible" style={
                             {"left": "270px",
                             "top": "129px"}}>
                             2h
@@ -66,32 +67,32 @@ class CheckIn extends React.Component {
                     <hr/>
                 </div>
             
-                <div className="sia-intro-message">
+                <div className="sia-intro-message init-left">
                     <img className="sia-face" src={require("./imgs/sia_bubble.png")}/>
                     <img className="message-box" src={require("./imgs/BG.png")}/>
                     <p className="message-box-text-checkin">Check-In is now open. You may use the QR code below to self check-in and 
                     print out your boarding pass.</p>
                 </div>
 
-                <img src={require("./imgs/boarding_qr_code.png")} style={
+                <img src={require("./imgs/boarding_qr_code.png")} className="init-left" style={
                     {"width": "110%"}
                 }/>
 
-                <div className="traveller-icons">
+                <div className="traveller-icons init-right">
                     <img src={require("./imgs/traveller_white.png")}/>
                     <img src={require("./imgs/traveller_white.png")}/>
                     <img src={require("./imgs/traveller_white.png")}/>
                     <img src={require("./imgs/traveller_white.png")}/>
                 </div>
 
-                <p className="info-text">There are currently <span style={{"color": "#FF9B21", "font-weight": "bold"}}>0 </span>people at your check-in
+                <p className="info-text init-right">There are currently <span style={{"color": "#FF9B21", "font-weight": "bold"}}>0 </span>people at your check-in
                 Expected waiting time: <span style={{"color": "#FF9B21", "font-weight": "bold"}}>15 mins</span></p>
                     
-                <p className="info-text">Once you arrive at <span style={{"color": "#FF9B21", "font-weight": "bold"}}>Changi Airport T2</span>,
+                <p className="info-text init-right">Once you arrive at <span style={{"color": "#FF9B21", "font-weight": "bold"}}>Changi Airport T2</span>,
                 please drop off at <span style={{"color": "#FF9B21", "font-weight": "bold"}}>Gate 4 </span> and proceed to
                 <span style={{"color": "#FF9B21", "font-weight": "bold"}}> counter 6 </span></p>
 
-                <div className="gate-details-container">
+                <div className="gate-details-container init-right">
                     <div className="detail">
                         <span className="detail-title">Gate</span>
                         <span className="detail-num">4</span>

@@ -17,9 +17,10 @@
 
 .message-box-text-checkin {
     position: absolute;
-    width: 60%;
+    width: 65%;
     text-align: center;
     font-size: 14px;
     line-height: 17px;
-    left: 125px;
+    left: 107px;
+    top: 0px;
 }

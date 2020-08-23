@@ -50,7 +50,7 @@ class KrisworldEntertainment extends React.Component {
                             1700
                         </div>
                         
-                        <div className="time-left-text" style={
+                        <div className="time-left-text init-invisible" style={
                             {"left": "280px",
                             "top": "129px"}}>
                             1h 15m
@@ -60,16 +60,22 @@ class KrisworldEntertainment extends React.Component {
                     <hr/>
                 </div>
                 
-                <div className="sia-intro-message">
+                <div className="sia-intro-message init-left">
                     <img className="sia-face" src={require("./imgs/sia_bubble.png")}/>
                     <img className="message-box" src={require("./imgs/BG.png")}/>
-                    <p className="message-box-text" style={{"top": "305px"}}>You have enough time to catch a movie!</p>
+                    <p className="message-box-text-kwe" style={{"top": "10px"}}>You have enough time to catch a movie!</p>
                 </div>
 
-                <p className="info-text">
+                <p className="info-text init-right">
                     Here are some of our top picks from the 
                     <span style={{"color": "#FF9B21", "width": "90%"}}> KrisWorld</span> catalogue.
                 </p>
+                <br/>
+
+                <img src={require("./imgs/inception.png")} className="movie-img init-bottom"/>
+                <img src={require("./imgs/avengers.png")} className="movie-img init-bottom"/>
+
+                <br/><br/>
             </div>
         );
     }

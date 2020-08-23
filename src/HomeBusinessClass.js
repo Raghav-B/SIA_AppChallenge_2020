@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import { withRouter, Link, BrowserRouter, Switch, Route } from 'react-router-dom';
 
 import "./HomeBusinessClass.css";
+import "./Animations.css";
 
 class HomeBusinessClass extends React.Component {
     render() {
@@ -66,7 +67,7 @@ class HomeBusinessClass extends React.Component {
                     <hr/>
                 </div>
             
-                <div className="sia-intro-message">
+                <div className="sia-intro-message init-left">
                     <img className="sia-face" src={require("./imgs/sia_bubble.png")}/>
                     <img className="message-box" src={require("./imgs/BG.png")}/>
                     <p className="message-box-text-hbc">Your seat lets you enter the <span style={
@@ -74,19 +75,19 @@ class HomeBusinessClass extends React.Component {
                     }>SilverKris Lounge</span>! Here is some info about the lounge.</p>
                 </div>
 
-                <img src={require("./imgs/silverkris_logo.png")} style={
+                <img src={require("./imgs/silverkris_logo.png")} className="init-right" style={
                     {"width": "110%"}
                 }></img>
 
-                <p className="info-text" style={{"width": "90%"}}>Thank you for choosing to fly Business Class with us, please proceed
+                <p className="info-text init-right" style={{"width": "90%"}}>Thank you for choosing to fly Business Class with us, please proceed
                  to book seating for the SilverKris Lounge.</p>
 
-                <img src={require("./imgs/silverkris_map.png")} style={
+                <img src={require("./imgs/silverkris_map.png")} className="init-right" style={
                     {"width": "120%"}
                 }></img>
 
                 <br/>
-                <span style={
+                <span className="init-left" style={
                     {"font-weight": "bold",
                         "font-size": "36px",
                         "line-height": "42px",
@@ -95,7 +96,7 @@ class HomeBusinessClass extends React.Component {
                 }>Easy Book</span>
                 <br/>
 
-                <div className="booking-container">
+                <div className="booking-container init-left">
                     <img src={require("./imgs/buggy.png")}/>
                     <span style={{
                         "font-size": "24px",
@@ -107,7 +108,7 @@ class HomeBusinessClass extends React.Component {
                     </div>
                 </div>
 
-                <div className="booking-container">
+                <div className="booking-container init-left">
                     <img src={require("./imgs/shower.png")}/>
                     <span style={{
                         "font-size": "24px",
@@ -120,7 +121,7 @@ class HomeBusinessClass extends React.Component {
                 </div>
 
                 <br/>
-                <span style={
+                <span className="init-right" style={
                     {"font-weight": "bold",
                         "font-size": "36px",
                         "line-height": "42px",
@@ -129,7 +130,7 @@ class HomeBusinessClass extends React.Component {
                 }>Kris Entertainment Hub</span>
                 <br/>
 
-                <div className="entertainment-hub-container">
+                <div className="entertainment-hub-container init-right">
                     <img src={require("./imgs/tv_icon.png")}/>
                     <img src={require("./imgs/music_icon.png")}/>
                     <img src={require("./imgs/book_icon.png")}/>

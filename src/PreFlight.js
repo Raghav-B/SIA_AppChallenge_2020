@@ -52,19 +52,19 @@ class PreFlight extends React.Component {
                             1700
                         </div>
                         
-                        <div className="time-left-text" style={
+                        <div className="time-left-text init-invisible" style={
                             {"left": "25px",
                             "top": "129px"}}>
                             <span style={{"color": "white"}}>15</span>m
                         </div>
 
-                        <div className="time-left-text" style={
+                        <div className="time-left-text init-invisible" style={
                             {"left": "150px",
                             "top": "129px"}}>
                             3h
                         </div>
 
-                        <div className="time-left-text" style={
+                        <div className="time-left-text init-invisible" style={
                             {"left": "270px",
                             "top": "129px"}}>
                             2h
@@ -77,7 +77,7 @@ class PreFlight extends React.Component {
                 <div className="sia-intro-message init-left">
                     <img className="sia-face" src={require("./imgs/sia_bubble.png")}/>
                     <img className="message-box" src={require("./imgs/BG.png")}/>
-                    <p className="message-box-text-preflight">Welcome to the KrisKompanion App! My name is <span style={
+                    <p className="message-box-text-preflight">Welcome! My name is <span style={
                         {"color": "#FF9B21", "font-weight": "bold"}}
                     >Sia</span> and I will be your personal assistant for this journey!</p>
                 </div>

@@ -5,6 +5,8 @@ import { BrowserRouter, Route, Switch, withRouter, Link } from "react-router-dom
 import Splash from "./Splash.js";
 import SignIn from "./SignIn.js";
 import Main from "./Main.js";
+import PostLandingScreen from './PostLandingScreen.js';
+import PostLandingScreenBaggage from "./PostLandingScreenBaggage.js"
 
 class App extends React.Component {
   
@@ -42,7 +44,7 @@ class App extends React.Component {
             <Link to="/main/krisworld-entertainment">8. Krisworld entertainment</Link><br/>
             <Link to="/main/inflight">9. In-flight screen</Link><br/>
             <Link to="/main/post-landing">10. Post landing screen</Link><br/>
-            <Link to="/main/post-langing/luggage">11. Post landing screen - luggage collection</Link>
+            <Link to="/main/post-landing/luggage">11. Post landing screen - luggage collection</Link>
           </div>
 
           <div className="screenContainer">
@@ -59,7 +61,9 @@ class App extends React.Component {
                 <Route path="/main/home-business-class" exact component={() => (<Main/>)}/>
                 <Route path="/main/krisshop" exact component={() => (<Main/>)}/>
                 <Route path="/main/krisworld-entertainment" exact component={() => (<Main/>)}/>
-
+                <Route path="/main/inflight" exact component={() => (<Main/>)}/>
+                <Route path="/main/post-landing" exact component={() => (<PostLandingScreen/>)}/>
+                <Route path="/main/post-landing/luggage" exact component={() => (<PostLandingScreenBaggage/>)}/>
               </Switch>
             
             </div>
