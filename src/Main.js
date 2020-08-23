@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import { withRouter, Link, BrowserRouter, Switch, Route } from 'react-router-dom'
 
 import "./Main.css";
+import "./Animations.css";
 
 import ProgressBar from "./ProgressBar.js";
 import PreFlight from "./PreFlight.js";

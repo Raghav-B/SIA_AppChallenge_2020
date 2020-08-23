@@ -75,4 +75,24 @@
     padding-top: 3%;
     padding-bottom: 3%;
     width: 100%;
+    animation: hover-contract 0.25s ease-out 0s 1 forwards;
+}
+
+.login-button:hover {
+    animation: hover-expand 0.25s ease-out 0s 1 forwards;
+}
+@keyframes hover-expand {
+    from {
+        transform: scale(1.0);
+    } to {
+        transform: scale(1.02);
+    }
+}
+
+@keyframes hover-contract {
+    from {
+        transform: scale(1.02);
+    } to {
+        transform: scale(1);
+    }
 }

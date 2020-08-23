@@ -1,5 +1,5 @@
 .init-invisible {
-    animation: become-visible 1s ease-out 0s 1;
+    animation: become-visible 2s ease-out 0s 1;
 }
 @keyframes become-visible {
     from {
@@ -38,7 +38,7 @@
 }
 
 .init-right {
-    animation: slide-in-from-right 1s ease-out 0s 1;
+    animation: slide-in-from-right 1s ease-out 0s 1 forwards;
 }
 @keyframes slide-in-from-right {
     from {
@@ -76,3 +76,14 @@
     }
 }
 
+.bar-grow {
+    animation: grow 1s ease-out 0s 1 forwards;
+    transform-origin: bottom left;
+}
+@keyframes grow {
+    from {
+        transform: scaleX(0);
+    } to {
+        transform: scaleX(1);
+    }
+}

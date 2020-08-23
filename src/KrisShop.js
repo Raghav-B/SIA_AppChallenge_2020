@@ -15,7 +15,7 @@ class KrisShop extends React.Component {
 
                     <div className="actual-bar">
                         <div className="full-bar"></div>
-                        <div className="elapsed-bar-home"></div>
+                        <div className="elapsed-bar-home  bar-grow"></div>
                         
                         <div className="indicator-line" style={
                                 {"left": "50px",
@@ -50,13 +50,13 @@ class KrisShop extends React.Component {
                             1700
                         </div>
 
-                        <div className="time-left-text" style={
+                        <div className="time-left-text init-invisible" style={
                             {"left": "205px",
                             "top": "129px"}}>
                             1h 15m
                         </div>
 
-                        <div className="time-left-text" style={
+                        <div className="time-left-text init-invisible" style={
                             {"left": "270px",
                             "top": "129px"}}>
                             2h

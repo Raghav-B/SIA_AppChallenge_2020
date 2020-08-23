@@ -14,3 +14,12 @@
     border-radius: 10px;
     z-index: 1;
 }
+
+.message-box-text-checkin {
+    position: absolute;
+    width: 60%;
+    text-align: center;
+    font-size: 14px;
+    line-height: 17px;
+    left: 125px;
+}

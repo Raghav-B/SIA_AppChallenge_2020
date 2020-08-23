@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import { withRouter, Link, BrowserRouter, Switch, Route } from 'react-router-dom';
 
 import "./PreFlight.css";
+import "./Animations.css";
 
 class PreFlight extends React.Component {
 
@@ -16,7 +17,7 @@ class PreFlight extends React.Component {
 
                     <div className="actual-bar">
                         <div className="full-bar"></div>
-                        <div className="elapsed-bar"></div>
+                        <div className="elapsed-bar  bar-grow"></div>
                         
                         <div className="indicator-line" style={
                                 {"left": "50px",
@@ -73,15 +74,15 @@ class PreFlight extends React.Component {
                     <hr/>
                 </div>
                 
-                <div className="sia-intro-message">
+                <div className="sia-intro-message init-left">
                     <img className="sia-face" src={require("./imgs/sia_bubble.png")}/>
                     <img className="message-box" src={require("./imgs/BG.png")}/>
-                    <p className="message-box-text">Welcome to the KrisKompanion App! My name is <span style={
+                    <p className="message-box-text-preflight">Welcome to the KrisKompanion App! My name is <span style={
                         {"color": "#FF9B21", "font-weight": "bold"}}
                     >Sia</span> and I will be your personal assistant for this journey!</p>
                 </div>
 
-                <div className="checklist-container">
+                <div className="checklist-container init-right">
                     <p className="make-sure-text">Make sure you have checked all this before leaving:</p>
                     <div className="checklist-item-container">
                         <img src={require("./imgs/passport.png")}/>
@@ -112,21 +113,21 @@ class PreFlight extends React.Component {
 
                 <br/>
 
-                <div className="traveller-icons">
+                <div className="traveller-icons init-left">
                     <img src={require("./imgs/traveller_white.png")}/>
                     <img src={require("./imgs/traveller_white.png")}/>
                     <img src={require("./imgs/traveller_white.png")}/>
                     <img src={require("./imgs/traveller_white.png")}/>
                 </div>
 
-                <p className="info-text">There are currently <span style={{"color": "#FF9B21", "font-weight": "bold"}}>0 </span>people at your check-in
+                <p className="info-text init-left">There are currently <span style={{"color": "#FF9B21", "font-weight": "bold"}}>0 </span>people at your check-in
                 Expected waiting time: <span style={{"color": "#FF9B21", "font-weight": "bold"}}>15 mins</span></p>
                     
-                <p className="info-text">Once you arrive at <span style={{"color": "#FF9B21", "font-weight": "bold"}}>Changi Airport T2</span>,
+                <p className="info-text init-left">Once you arrive at <span style={{"color": "#FF9B21", "font-weight": "bold"}}>Changi Airport T2</span>,
                 please drop off at <span style={{"color": "#FF9B21", "font-weight": "bold"}}>Gate 4 </span> and proceed to
                 <span style={{"color": "#FF9B21", "font-weight": "bold"}}> counter 6 </span></p>
 
-                <div className="gate-details-container">
+                <div className="gate-details-container init-left">
                     <div className="detail">
                         <span className="detail-title">Gate</span>
                         <span className="detail-num">4</span>
@@ -137,10 +138,10 @@ class PreFlight extends React.Component {
                     </div>
                 </div>
 
-                <p className="info-text" style={{"width": "90%"}}>It will take 20 mins for you to reach Changi Terminal 2. Do remember
+                <p className="info-text init-left" style={{"width": "90%"}}>It will take 20 mins for you to reach Changi Terminal 2. Do remember
                  to arrange transport!</p>
 
-                <img className="preflight-map" src={require("./imgs/preflight-map.png")}/>
+                <img className="preflight-map init-left" src={require("./imgs/preflight-map.png")}/>
                 <br/><br/>
             </div>
         );

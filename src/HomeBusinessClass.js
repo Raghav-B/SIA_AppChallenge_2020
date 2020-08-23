@@ -15,7 +15,7 @@ class HomeBusinessClass extends React.Component {
 
                     <div className="actual-bar">
                         <div className="full-bar"></div>
-                        <div className="elapsed-bar-krisshop"></div>
+                        <div className="elapsed-bar-krisshop  bar-grow"></div>
                         
                         <div className="indicator-line" style={
                                 {"left": "50px",
@@ -50,13 +50,13 @@ class HomeBusinessClass extends React.Component {
                             1700
                         </div>
                         
-                        <div className="time-left-text" style={
+                        <div className="time-left-text init-invisible" style={
                             {"left": "140px",
                             "top": "129px"}}>
                             2h 40m
                         </div>
 
-                        <div className="time-left-text" style={
+                        <div className="time-left-text init-invisible" style={
                             {"left": "270px",
                             "top": "129px"}}>
                             2h
@@ -69,7 +69,7 @@ class HomeBusinessClass extends React.Component {
                 <div className="sia-intro-message">
                     <img className="sia-face" src={require("./imgs/sia_bubble.png")}/>
                     <img className="message-box" src={require("./imgs/BG.png")}/>
-                    <p className="message-box-text">Your seat lets you enter the <span style={
+                    <p className="message-box-text-hbc">Your seat lets you enter the <span style={
                         {"color": "#2834A5"}
                     }>SilverKris Lounge</span>! Here is some info about the lounge.</p>
                 </div>

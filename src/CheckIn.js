@@ -15,7 +15,7 @@ class CheckIn extends React.Component {
 
                     <div className="actual-bar">
                         <div className="full-bar"></div>
-                        <div className="elapsed-bar-checkin"></div>
+                        <div className="elapsed-bar-checkin  bar-grow"></div>
                         
                         <div className="indicator-line" style={
                                 {"left": "50px",
@@ -69,7 +69,7 @@ class CheckIn extends React.Component {
                 <div className="sia-intro-message">
                     <img className="sia-face" src={require("./imgs/sia_bubble.png")}/>
                     <img className="message-box" src={require("./imgs/BG.png")}/>
-                    <p className="message-box-text">Check-In is now open. You may use the QR code below to self check-in and 
+                    <p className="message-box-text-checkin">Check-In is now open. You may use the QR code below to self check-in and 
                     print out your boarding pass.</p>
                 </div>
 

@@ -6,16 +6,16 @@ import "./KrisworldEntertainment.css";
 class KrisworldEntertainment extends React.Component {
     render() {
         return (
-            <div className="krisworld-entertaiment-container">
+            <div className="krisworld-entertainment-container">
                 <div className="progress-bar-container">
                     <span className="welcome-text">Welcome Mr Ojus Sharma,</span>
                     <br/>
-                    <span className="flight-text">Your flight <b>SQ38</b> departs in 4 hrs 40 mins</span>
+                    <span className="flight-text">Your flight <b>SQ38</b> departs in 1 hrs 15 mins</span>
                     <br/>
 
                     <div className="actual-bar">
                         <div className="full-bar"></div>
-                        <div className="elapsed-bar-krisshop"></div>
+                        <div className="elapsed-bar-krisworld-entertainment  bar-grow"></div>
                         
                         <div className="indicator-line" style={
                                 {"left": "50px",
@@ -51,20 +51,25 @@ class KrisworldEntertainment extends React.Component {
                         </div>
                         
                         <div className="time-left-text" style={
-                            {"left": "140px",
+                            {"left": "280px",
                             "top": "129px"}}>
-                            2h 40m
-                        </div>
-
-                        <div className="time-left-text" style={
-                            {"left": "270px",
-                            "top": "129px"}}>
-                            2h
+                            1h 15m
                         </div>
                     </div>
 
                     <hr/>
                 </div>
+                
+                <div className="sia-intro-message">
+                    <img className="sia-face" src={require("./imgs/sia_bubble.png")}/>
+                    <img className="message-box" src={require("./imgs/BG.png")}/>
+                    <p className="message-box-text" style={{"top": "305px"}}>You have enough time to catch a movie!</p>
+                </div>
+
+                <p className="info-text">
+                    Here are some of our top picks from the 
+                    <span style={{"color": "#FF9B21", "width": "90%"}}> KrisWorld</span> catalogue.
+                </p>
             </div>
         );
     }

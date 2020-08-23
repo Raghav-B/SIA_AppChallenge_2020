@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import { withRouter, Link, BrowserRouter, Switch, Route } from 'react-router-dom';
 
 import "./Chatting.css";
+import "./Animations.css";
 
 class Chatting extends React.Component {
 
@@ -16,7 +17,7 @@ class Chatting extends React.Component {
 
                     <div className="actual-bar">
                         <div className="full-bar"></div>
-                        <div className="elapsed-bar"></div>
+                        <div className="elapsed-bar bar-grow"></div>
                         
                         <div className="indicator-line" style={
                                 {"left": "50px",
@@ -73,29 +74,29 @@ class Chatting extends React.Component {
                     <hr/>
                 </div>
 
-                <div className="sia-intro-message">
+                <div className="sia-intro-message init-left">
                     <img className="sia-face-sia" src={require("./imgs/sia_bubble.png")}/>
                     <img className="message-box-sia" src={require("./imgs/BG.png")}/>
                     <p className="message-box-text-sia" style={
-                        {"left": "140px", "top": "300px"}
+                        {"left": "120px", "top": "0px"}
                     }>Hi! What would you like to talk about?</p>
                 </div>
 
-                <div className="sia-intro-message">
+                <div className="sia-intro-message init-right">
                     <img className="message-box-sia" src={require("./imgs/Vector.png")}/>
                     <div className="user-icon">
                         <span>OS</span>
                     </div>
                     <p className="message-box-text-sia" style={
-                        {"left": "35px", "top": "393px", "color": "white", "width": "60%"}
+                        {"left": "20px", "top": "0px", "color": "white", "width": "60%"}
                     }>How much luggage I am allowed to carry on to the flight?</p>
                 </div>
 
-                <div className="sia-intro-message">
+                <div className="sia-intro-message init-left">
                     <img className="sia-face-sia" src={require("./imgs/sia_bubble.png")}/>
                     <img className="message-box-sia" src={require("./imgs/BG.png")}/>
                     <p className="message-box-text-sia" style={
-                        {"left": "140px", "top": "490px"}
+                        {"left": "120px", "top": "0px"}
                     }>You are allowed 7 kg of carry-on luggage!</p>
                 </div>
             </div>

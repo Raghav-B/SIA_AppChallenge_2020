@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import { withRouter, Link } from 'react-router-dom';
 
 import "./Home.css";
+import "./Animations.css";
 
 function Home() {
     return (
@@ -14,7 +15,7 @@ function Home() {
 
                 <div className="actual-bar">
                     <div className="full-bar"></div>
-                    <div className="elapsed-bar-home"></div>
+                    <div className="elapsed-bar-home  bar-grow"></div>
                     
                     <div className="indicator-line" style={
                             {"left": "50px",
@@ -65,39 +66,43 @@ function Home() {
                 <hr/>
             </div>
             
-            <p className="krisshop-invite">
+            <p className="krisshop-invite init-left">
                 Since you still have some time, why not do some shopping?
             </p>
 
-            <div className="krisshop-panel"  style={{"padding-left": "5%", "padding-right": "5%"}}>
-                <img src={require("./imgs/krisshop.png")}/>
-            </div>
+            <Link to="/main/krisshop" className="init-left">
+                <div className="krisshop-panel"  style={{"padding-left": "5%", "padding-right": "5%"}}>
+                    <img src={require("./imgs/krisshop.png")}/>
+                </div>
+            </Link>
+            
+            <Link to="/main/krisshop" className="init-left">
+                <div className="krisshop-panel">
+                    <p>
+                        Get 10% off all makeup needs!
+                    </p>
+                    <img src={require("./imgs/makeupbrush.jpg")}/>
+                </div>
+            </Link>
 
-            <div className="krisshop-panel">
-                <p>
-                    Get 10% off all makeup needs!
-                </p>
-                <img src={require("./imgs/makeupbrush.jpg")}/>
-            </div>
-
-            <div className="traveller-icons">
+            <div className="traveller-icons init-right">
                 <img src={require("./imgs/traveller_black.png")}/>
                 <img src={require("./imgs/traveller_black.png")}/>
                 <img src={require("./imgs/traveller_white.png")}/>
                 <img src={require("./imgs/traveller_white.png")}/>
             </div>
 
-            <p className="krisshop-invite">
+            <p className="krisshop-invite init-right">
                 There are currently <span style={{"color": "#FF9B21", "font-weight": "bold"}}>5</span> people at your gate
                 Expected waiting time: <span style={{"color": "#FF9B21", "font-weight": "bold"}}>10 mins</span>
             </p>
 
-            <p className="krisshop-invite">
+            <p className="krisshop-invite init-right">
                 Your gate will open soon and you are the first batch to be seated, please proceed to  
                 <span style={{"color": "#FF9B21", "font-weight": "bold"}}> Gate D30</span> to avoid delays.
             </p>
 
-            <img src={require("./imgs/shop_to_gate_map.png")} className="shop-to-gate-map"></img>
+            <img src={require("./imgs/shop_to_gate_map.png")} className="shop-to-gate-map init-right"></img>
 
             <br/><br/>
         </div>
